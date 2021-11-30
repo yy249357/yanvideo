@@ -2,9 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const GitRevisionPlugin = require('git-revision-webpack-plugin');
 const gitRevisionPlugin = new GitRevisionPlugin();
-const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
-const px2viewport = require('postcss-px2viewport');
 
 module.exports = {
     mode: 'development',

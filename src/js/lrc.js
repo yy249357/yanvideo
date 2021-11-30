@@ -30,8 +30,8 @@ class Lrc {
 
     update(currentTime = this.player.audio.currentTime) {
         let lineHeight = 32;
-        let noScrollingNum = this.player.options.noScrollingNum - 1;
-        let dom = this.container.getElementsByTagName('p')[0];
+        const noScrollingNum = this.player.options.noScrollingNum - 1;
+        const dom = this.container.getElementsByTagName('p')[0];
         lineHeight = dom.clientHeight;
         if (this.index > this.current.length - 1 || currentTime < this.current[this.index][0] || !this.current[this.index + 1] || currentTime >= this.current[this.index + 1][0]) {
             for (let i = 0; i < this.current.length; i++) {
